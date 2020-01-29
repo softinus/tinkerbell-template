@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - public
   schedule:
     # 오전 11시 (GitHub Action은 UTC 타임존)
     - cron: "0 0 * * *"
