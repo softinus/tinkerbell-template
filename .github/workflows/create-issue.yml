@@ -5,7 +5,7 @@ on:
       - master
   schedule:
     # 오전 11시 (GitHub Action은 UTC 타임존)
-    - cron: "0 2 * * *"
+    - cron: "0 0 * * *"
 jobs:
   fetch:
     name: Fetch
