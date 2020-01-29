@@ -3,12 +3,12 @@ import { Filter, RoomFloor, RoomCount, ContractType } from '../filter';
 /**
  * 월세 한도 (단위 만원)
  */
-const rentBudget = 100;
+const rentBudget = 60;
 
 /**
  * 보증금 한도 (단위 만원)
  */
-const depositBudget = 100;
+const depositBudget = 1000;
 
 const commonFilter: Omit<Filter, 'bounds' | 'id'> = {
     priceRange: {
@@ -27,27 +27,19 @@ const commonFilter: Omit<Filter, 'bounds' | 'id'> = {
 
 const candidates: Filter[] = [
     {
-        id: '뚝섬 서울숲',
+        id: '야탑',
         ...commonFilter,
         bounds: {
-            max: { lat: 37.5558485, lng: 127.060802 },
-            min: { lat: 37.5317832, lng: 127.0328288 },
+            max: { lat: 37.418483, lng: 127.128718 },
+            min: { lat: 37.405393, lng: 127.125072 },
         },
     },
     {
-        id: '양재',
+        id: '서현',
         ...commonFilter,
         bounds: {
-            max: { lat: 37.4854867, lng: 127.0506948 },
-            min: { lat: 37.4667919, lng: 127.0319895 },
-        },
-    },
-    {
-        id: '회사 근처',
-        ...commonFilter,
-        bounds: {
-            max: { lat: 37.508058, lng: 127.0463052 },
-            min: { lat: 37.4893626, lng: 127.0275955 },
+            max: { lat: 37.389726, lng: 127.120014 },
+            min: { lat: 37.383179, lng: 127.127181 },
         },
     },
 ];
