@@ -1,4 +1,4 @@
-name: 새로 올라온 직거래 방 정보 받아오기
+name: retrieve rents info
 on:
   push:
     branches:
